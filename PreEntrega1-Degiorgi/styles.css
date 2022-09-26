@@ -176,30 +176,10 @@ footer {
 
 }
 
-footer p {
-    text-align: center;
+.colorVerde{
+    color: rgb(0, 253, 21);
 }
 
-footer ul li {
-    position: relative;
-    padding-top: 20px;
-    text-align: right;
-    display: inline;
-    flex-wrap: wrap;
-}
-
-
-footer a{
-   text-decoration: none;
-   color: rgb(0, 253, 21);
-   transition: all 0.4s
-
-}
-
-footer a:hover {
-    color: rgb(235, 250, 215);
-
-}
 
 /* Contacto */
 .form {
