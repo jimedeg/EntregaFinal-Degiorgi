@@ -7,14 +7,15 @@
 
 /* General para la pag */
 html {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive ;
     background-color: rgb(241, 255, 240);
 }
 
 /* Barra de navegación */
 
 header {
-    background-color: black;
+    background-color: rgb(19, 18, 18);
+    
     padding: 10px;
     display: block;
     width: 100%;
@@ -22,6 +23,11 @@ header {
     text-align: right;
     box-sizing: border-box;
 }
+
+nav div button{
+    background-color:rgb(0, 253, 21) !important;
+}
+
 
 .logo {
     position: center;
@@ -41,8 +47,22 @@ header {
 
 header a {
     text-decoration: none;
+    font-family: 'Indie Flower', cursive ;
     color: rgb(0, 253, 21);
 
+}
+.btn-outline-success {
+    font-family: 'Indie Flower', cursive !important ;
+    --bs-btn-color: rgb(0 253 21) !important;
+    --bs-btn-border-color: rgb(0 253 21) !important;
+    --bs-btn-hover-color: rgb(235, 250, 215) !important;
+    --bs-btn-hover-bg: rgba(235, 250, 215, 0) !important;
+    --bs-btn-hover-border-color: rgb(0 253 21) !important;
+    --bs-btn-active-color: rgb(0 253 21) !important;
+    --bs-btn-active-bg: rgb(0 253 21) !important;
+    --bs-btn-disabled-color: rgb(0 253 21) !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: rgb(0 253 21) !important;
 }
 
 header ul {
@@ -54,7 +74,7 @@ header ul {
 }
 
 header ul li {
-    display: inline;
+    display: inline !important;
     /* border: solid 1px greenyellow; */
     flex-wrap: wrap;
     padding-top: 10px;
@@ -63,6 +83,11 @@ header ul li {
     transition: all 0.4s
 
 }
+
+div#navbarNavDropdown {
+    justify-content: flex-end;
+}
+
 
 header ul li a:hover {
     color: rgb(235, 250, 215);

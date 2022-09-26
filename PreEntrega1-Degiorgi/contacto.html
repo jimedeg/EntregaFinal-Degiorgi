@@ -17,21 +17,32 @@
 
 <!--NavBar-->
 <body>
+    <!--NavBar-->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="imagenes/Icono.jpg" width="50">
-                <a class="text" href="index.html">Clapperboard</a>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="series.html">Series</a></li>
-                    <li><a href="peliculas.html">Películas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="iniciar_sesion.html">Iniciar Sesión</a></li>
-                    <li><a href="registro.html">Registrarse</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class=" container">
+                <div class="logo">
+                    <img src="imagenes/Icono.jpg" width="50">
+                    <a class="text" href="index.html">Clapperboard</a>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="series.html">Series</a></li>
+                        <li><a href="peliculas.html">Películas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success" href="iniciar_sesion.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-success" href="registro.html">Registro</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
