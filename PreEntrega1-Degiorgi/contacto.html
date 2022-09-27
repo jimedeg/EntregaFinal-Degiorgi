@@ -16,9 +16,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<!--NavBar-->
 <body>
-    <!--NavBar-->
+
+<!--NavBar-->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class=" container">
@@ -49,30 +49,40 @@
     </header>
     
 <!--Formulario de contacto-->
-    <div>
-        <form action="" method="post" class="form">
-            <h2>Contacto</h2>
-            <fieldset> <legend>Datos de Contacto</legend>
-                <label for="">Nombre: </label>
-                <input type="text" name="nombre" id="" placeholder="Nombre">
-                <label for="">Apellido: </label>
-                <input type="text" name="apellido" id="" placeholder="Apellido">
-                <br>
-                <label for="">Email: </label>
-                <input type="email" name="email" id="" placeholder="Email">            
+<section class="container">
+    <h3>Formulario de contacto</h3>
     
-                <div> ¿Quéres que te mandemos más info?
-                    <input type="checkbox" name="acepta" value="1">
-                </div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <div>
-                    <input type="submit" class="btn" value="Enviar"> <input type="reset" class="btn" value="Borrar">
-                </div>
-            </fieldset>
-        </form>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label formColor">Nombre:</label>
+        <input type="nombre" class="form-control " id="exampleFormControlInput1" placeholder="Nombre">
     </div>
-    
-    <!--Footer-->
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label formColor">Apellido:</label>
+        <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label formColor">Email:</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label formColor" for="flexCheckDefault">
+            ¿Quéres que te mandemos más info?
+        </label>
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label formColor">Mensaje:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="">
+        <input type="submit" class="btn btn-outline-success" value="Enviar"> 
+        <input type="reset" class="btn btn-outline-danger" value="Borrar">
+    </div>
+</section>
+
+
+
+<!--Footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 border-top">
         <div class="col-md-4 d-flex align-items-center logo">
           <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -87,9 +97,9 @@
               <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter colorVerde"></i> </a></li>
               <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-whatsapp colorVerde"></i> </a></li>
         </ul>
-      </footer>
+    </footer>
 
-    <!-- links -->
+<!-- links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>

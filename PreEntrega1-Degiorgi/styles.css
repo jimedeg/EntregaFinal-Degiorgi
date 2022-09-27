@@ -7,7 +7,7 @@
 
 /* General para la pag */
 html {
-    font-family: 'Indie Flower', cursive ;
+    font-family: 'Indie Flower', cursive !important;
     background-color: rgb(241, 255, 240);
 }
 
@@ -51,12 +51,15 @@ header a {
     color: rgb(0, 253, 21);
 
 }
+
+/* Botones */
+
 .btn-outline-success {
     font-family: 'Indie Flower', cursive !important ;
     --bs-btn-color: rgb(0 253 21) !important;
     --bs-btn-border-color: rgb(0 253 21) !important;
     --bs-btn-hover-color: rgb(235, 250, 215) !important;
-    --bs-btn-hover-bg: rgba(235, 250, 215, 0) !important;
+    --bs-btn-hover-bg: rgba(0, 253, 21, 0.5) !important;
     --bs-btn-hover-border-color: rgb(0 253 21) !important;
     --bs-btn-active-color: rgb(0 253 21) !important;
     --bs-btn-active-bg: rgb(0 253 21) !important;
@@ -64,6 +67,26 @@ header a {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: rgb(0 253 21) !important;
 }
+
+.btn {
+    /* display: inline; */
+    /* padding: 5px; */
+    /* border-bottom: 1px !important; */
+    /* border-color: rgb(168, 240, 140); */
+    /* background-color: rgb(168, 240, 140); */
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+      
+}
+
+.btn-outline-danger {
+    font-family: 'Indie Flower', cursive !important ;
+    --bs-btn-hover-bg: #dc3546bb !important;
+
+}
+
+/* NavBar */
 
 header ul {
     position: relative;
@@ -117,15 +140,15 @@ header ul li a:hover {
 }
 
 
-section {
+/* section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 5px;
     width: 100%;
 
-}
+} */
 
-section div {
+/* section div {
     flex-basis: 50%; 
     display: flex;
     /* flex-direction: column; */
@@ -134,7 +157,7 @@ section div {
     background-color: rgba(204, 235, 146, 0.637);
 
 
-}
+} */
 
 section div img {
     max-width: 100%;
@@ -182,36 +205,19 @@ footer {
 
 
 /* Contacto */
-.form {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   
-  .form input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
+h3{
+    color: rgb(14, 124, 23);
+}
 
-  }
+.formColor{
+    color: rgb(14, 124, 23);
+   
+}
 
 
 
-  .btn {
-    display: inline;
-    padding: 5px;
-    border: none;
-    background-color: rgb(168, 240, 140);
-    cursor: pointer;
-    border-radius: 5px;
-    width: 150px;
-      
-  }
+
+
 
   
