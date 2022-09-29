@@ -6,16 +6,19 @@
 }
 
 /* General para la pag */
-html {
+body {
+    margin: 0;
     font-family: 'Indie Flower', cursive !important;
-    background-color: rgb(241, 255, 240);
+    font-size: large;
+    background-color: rgb(241, 255, 240) !important;
 }
 
 /* Barra de navegación */
 
 header {
     background-color: rgb(19, 18, 18);
-    
+    font-size: large !important;
+
     padding: 10px;
     display: block;
     width: 100%;
@@ -47,7 +50,6 @@ nav div button{
 
 header a {
     text-decoration: none;
-    font-family: 'Indie Flower', cursive ;
     color: rgb(0, 253, 21);
 
 }
@@ -71,12 +73,12 @@ header a {
 .btn {
     /* display: inline; */
     /* padding: 5px; */
-    /* border-bottom: 1px !important; */
     /* border-color: rgb(168, 240, 140); */
     /* background-color: rgb(168, 240, 140); */
     cursor: pointer;
     border-radius: 5px;
     width: 150px;
+    font-size: large !important;
       
 }
 
@@ -140,32 +142,6 @@ header ul li a:hover {
 }
 
 
-/* section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5px;
-    width: 100%;
-
-} */
-
-/* section div {
-    flex-basis: 50%; 
-    display: flex;
-    /* flex-direction: column; */
-
-    padding: 10px;
-    background-color: rgba(204, 235, 146, 0.637);
-
-
-} */
-
-section div img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
 section div p {
 
     font-size: large;
@@ -174,14 +150,6 @@ section div p {
 
 
 }
-
-section div a {
-    color: black;
-    text-decoration: none;
-
-
-}
-
 
 
 /* footer */
@@ -199,14 +167,33 @@ footer {
 
 }
 
-.colorVerde{
+.bi-facebook,
+.bi-instagram,
+.bi-twitter,
+.bi-whatsapp {
     color: rgb(0, 253, 21);
+    font-size: 20px;
+
+}
+.bi-facebook:hover,
+.bi-instagram:hover,
+.bi-twitter:hover,
+.bi-whatsapp:hover {
+    color: rgb(235, 250, 215);
+
+}
+
+
+
+.text:hover {
+    color: rgb(235, 250, 215);
+
 }
 
 
 /* Contacto */
   
-h3{
+h2,h3{
     color: rgb(14, 124, 23);
 }
 
@@ -214,6 +201,17 @@ h3{
     color: rgb(14, 124, 23);
    
 }
+
+/* peliculas  */
+
+.card {
+    transition: all 0.5s
+
+}
+.card:hover {
+    transform: scale(1.1)
+}
+
 
 
 
