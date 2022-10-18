@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Reset */
-/* line 5, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 12, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +8,18 @@
 }
 
 /* General para la pag */
-/* line 12, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 19, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 body {
   margin: 0;
   font-family: 'Indie Flower', cursive !important;
   font-size: large;
-  background-color: #f1fff0 !important;
+  background-color: #052c05 !important;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* line 21, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 28, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 body footer {
   background-color: black;
   color: #00fd15;
@@ -33,7 +33,7 @@ body footer {
 }
 
 /* Barra de navegación */
-/* line 37, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 44, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 header {
   background-color: #131212;
   font-size: large !important;
@@ -45,7 +45,7 @@ header {
   box-sizing: border-box;
 }
 
-/* line 47, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 54, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 header ul {
   position: relative;
   padding-top: 20px;
@@ -53,7 +53,7 @@ header ul {
   display: inline;
 }
 
-/* line 53, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 60, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 header li {
   display: inline !important;
   flex-wrap: wrap;
@@ -63,30 +63,30 @@ header li {
   transition: all 0.4s;
 }
 
-/* line 63, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 70, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 header a {
   text-decoration: none;
   color: #00fd15;
 }
 
-/* line 68, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 75, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 header a:hover {
   color: #ebfad7;
 }
 
-/* line 74, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 81, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 nav div button {
   background-color: #00fd15 !important;
 }
 
-/* line 79, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 86, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .logo {
   position: center;
   float: left;
   display: block;
 }
 
-/* line 85, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 92, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .text {
   text-align: center;
   font-size: x-large;
@@ -97,22 +97,22 @@ nav div button {
 }
 
 /* Botones */
-/* line 98, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 105, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .btn-outline-success {
   font-family: 'Indie Flower', cursive !important;
-  --bs-btn-color: rgb(0 253 21) !important;
-  --bs-btn-border-color: rgb(0 253 21) !important;
+  --bs-btn-color: rgb(0, 253, 21) !important;
+  --bs-btn-border-color: rgb(0, 253, 21) !important;
   --bs-btn-hover-color: rgb(235, 250, 215) !important;
   --bs-btn-hover-bg: rgba(0, 253, 21, 0.5) !important;
-  --bs-btn-hover-border-color: rgb(0 253 21) !important;
-  --bs-btn-active-color: rgb(0 253 21) !important;
-  --bs-btn-active-bg: rgb(0 253 21) !important;
-  --bs-btn-disabled-color: rgb(0 253 21) !important;
+  --bs-btn-hover-border-color: $color-primario !important;
+  --bs-btn-active-color: $color-primario !important;
+  --bs-btn-active-bg: $color-primario !important;
+  --bs-btn-disabled-color: $color-primario !important;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(0 253 21) !important;
+  --bs-btn-disabled-border-color: $color-primario !important;
 }
 
-/* line 112, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 119, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .btn {
   cursor: pointer;
   border-radius: 5px;
@@ -120,20 +120,20 @@ nav div button {
   font-size: large !important;
 }
 
-/* line 120, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 127, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .btn-outline-danger {
   font-family: 'Indie Flower', cursive !important;
   --bs-btn-hover-bg: #dc3546bb !important;
 }
 
 /* NavBar */
-/* line 129, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 136, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 div#navbarNavDropdown {
   justify-content: flex-end;
 }
 
 /* body */
-/* line 137, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 144, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 #banner {
   background: url("../imagenes/icono.jpg") #000;
   display: flex;
@@ -143,16 +143,15 @@ div#navbarNavDropdown {
   width: 100%;
 }
 
-/* line 146, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 153, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 #banner h1 {
   color: #00ff15;
   text-shadow: 5px 5px 5px #0f0f0f;
-  font-size: xxx-large;
-  border-radius: 10px;
+  font-size: xx-large;
   padding: 5px 10px;
 }
 
-/* line 157, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 163, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 section div p {
   font-size: large;
   padding: 10px;
@@ -160,7 +159,7 @@ section div p {
 }
 
 /* footer */
-/* line 170, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 176, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .bi-facebook,
 .bi-instagram,
 .bi-twitter,
@@ -169,7 +168,7 @@ section div p {
   font-size: 20px;
 }
 
-/* line 178, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 184, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .bi-facebook:hover,
 .bi-instagram:hover,
 .bi-twitter:hover,
@@ -177,31 +176,40 @@ section div p {
   color: #ebfad7;
 }
 
-/* line 186, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 192, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .text:hover {
   color: #ebfad7;
 }
 
 /* Contacto */
-/* line 195, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
-h2, h3 {
-  color: #0e7c17;
+/* line 201, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+h2, h3, h4, h5 {
+  color: #139e1f;
 }
 
-/* line 199, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 205, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .formColor {
-  color: #0e7c17;
+  color: #139e1f;
 }
 
 /* peliculas  */
-/* line 206, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 212, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   transition: all 0.5s;
+  --bs-card-bg: rgb(235, 250, 215);
 }
 
-/* line 210, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 219, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .card:hover {
-  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 #01f70e;
+}
+
+/* line 225, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+.tamañoImg {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=estilos.css.map */

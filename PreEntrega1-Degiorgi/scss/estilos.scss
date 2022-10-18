@@ -1,4 +1,11 @@
 // Variables
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1200px;
+
+$color-titulos: rgb(19, 158, 31);
+$color-primario: rgb(0, 253, 21);
+
 
 
 /* Reset */
@@ -13,14 +20,14 @@ body {
     margin: 0;
     font-family: 'Indie Flower', cursive !important;
     font-size: large;
-    background-color: rgb(241, 255, 240) !important;
+    background-color: rgb(5, 44, 5) !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
         
     footer{
         background-color: rgb(0, 0, 0);
-        color: rgb(0, 253, 21);
+        color: $color-primario;
         display: block;
         width: 100%;
         float: left;
@@ -62,7 +69,7 @@ header {
 
     a {
         text-decoration: none;
-        color: rgb(0, 253, 21);
+        color: $color-primario
     }
     
     a:hover {
@@ -97,16 +104,16 @@ nav div button{
 
 .btn-outline-success {
     font-family: 'Indie Flower', cursive !important ;
-    --bs-btn-color: rgb(0 253 21) !important;
-    --bs-btn-border-color: rgb(0 253 21) !important;
+    --bs-btn-color: rgb(0, 253, 21) !important;
+    --bs-btn-border-color: rgb(0, 253, 21) !important;
     --bs-btn-hover-color: rgb(235, 250, 215) !important;
     --bs-btn-hover-bg: rgba(0, 253, 21, 0.5) !important;
-    --bs-btn-hover-border-color: rgb(0 253 21) !important;
-    --bs-btn-active-color: rgb(0 253 21) !important;
-    --bs-btn-active-bg: rgb(0 253 21) !important;
-    --bs-btn-disabled-color: rgb(0 253 21) !important;
+    --bs-btn-hover-border-color: $color-primario !important;
+    --bs-btn-active-color: $color-primario !important;
+    --bs-btn-active-bg: $color-primario !important;
+    --bs-btn-disabled-color: $color-primario !important;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: rgb(0 253 21) !important;
+    --bs-btn-disabled-border-color: $color-primario !important;
 }
 
 .btn {
@@ -146,8 +153,7 @@ div#navbarNavDropdown {
     h1 {
         color: rgb(0, 255, 21);
         text-shadow: 5px 5px 5px rgb(15, 15, 15);
-        font-size:xxx-large;
-        border-radius: 10px;
+        font-size:xx-large;
         padding: 5px 10px;
     }
     
@@ -171,7 +177,7 @@ section div p {
 .bi-instagram,
 .bi-twitter,
 .bi-whatsapp {
-    color: rgb(0, 253, 21);
+    color: $color-primario;
     font-size: 20px;
 
 }
@@ -192,21 +198,31 @@ section div p {
 
 /* Contacto */
   
-h2,h3{
-    color: rgb(14, 124, 23);
+h2,h3,h4,h5{
+    color: $color-titulos;
 }
 
 .formColor{
-    color: rgb(14, 124, 23);
+    color: $color-titulos;
    
 }
 
 /* peliculas  */
 
 .card {
-    transition: all 0.5s
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    transition: all 0.5s;
+    --bs-card-bg: rgb(235, 250, 215);
 }
+
 .card:hover {
-    transform: scale(1.1)
+    box-shadow: 0 8px 16px 0 rgb(1, 247, 14);
+
+    // transform: scale(1.1);
+}
+
+.tamañoImg {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
 }
