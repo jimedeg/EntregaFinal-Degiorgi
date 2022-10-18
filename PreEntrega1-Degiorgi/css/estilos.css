@@ -201,12 +201,12 @@ h2, h3, h4, h5 {
   --bs-card-bg: rgb(235, 250, 215);
 }
 
-/* line 219, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 218, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .card:hover {
   box-shadow: 0 8px 16px 0 #01f70e;
 }
 
-/* line 225, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
+/* line 226, ../../OneDrive/Documents/GitHub/PreEntrega2-Degiorg/PreEntrega1-Degiorgi/scss/estilos.scss */
 .tamañoImg {
   border-radius: 5px 5px 0 0;
   width: 100%;

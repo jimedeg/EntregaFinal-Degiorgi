@@ -214,13 +214,14 @@ h2,h3,h4,h5{
     border-radius: 5px;
     transition: all 0.5s;
     --bs-card-bg: rgb(235, 250, 215);
+    
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgb(1, 247, 14);
+
+        // transform: scale(1.1);
+    }
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgb(1, 247, 14);
-
-    // transform: scale(1.1);
-}
 
 .tamañoImg {
     border-radius: 5px 5px 0 0;
