@@ -29,6 +29,15 @@ body footer {
   margin-top: auto;
 }
 
+body footer .text-muted {
+  --bs-text-opacity: 1;
+  color: #a0a5a8 !important;
+}
+
+body footer .border-top {
+  border-top: 0px !important;
+}
+
 /* Barra de navegación */
 header {
   background-color: #131212;
@@ -83,9 +92,12 @@ header .nav-link:hover {
 header .dropdown-menu {
   --bs-dropdown-min-width: 10px;
   --bs-dropdown-bg: rgb(5, 44, 5);
-  --bs-dropdown-link-color: rgb(0,253,21)
+  --bs-dropdown-link-color: rgb(0,253,21);
+}
 
-    ;
+header a.dropdown-item:hover {
+  color: #06dd18;
+  background: #ebfad7;
 }
 
 .logo {
@@ -180,11 +192,11 @@ section div p {
 
 /* Contacto */
 h2, h3, h4, h5 {
-  color: #139e1f;
+  color: #06dd18;
 }
 
 .formColor {
-  color: #139e1f;
+  color: #06dd18;
 }
 
 /* peliculas  */

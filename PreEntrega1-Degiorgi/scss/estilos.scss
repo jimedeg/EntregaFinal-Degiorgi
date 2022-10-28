@@ -3,7 +3,7 @@ $mobile: 576px;
 $tablet: 768px;
 $desktop: 1200px;
 
-$color-titulos: rgb(19, 158, 31);
+$color-titulos: rgb(6, 221, 24);
 $color-primario: rgb(0, 253, 21);
 $color-claro: rgb(235, 250, 215);
 
@@ -36,6 +36,14 @@ body {
         box-sizing: border-box;
         padding: 10px;
         margin-top: auto;
+
+        .text-muted {
+            --bs-text-opacity: 1;
+            color: #a0a5a8!important;
+        }
+        .border-top {
+            border-top: 0px !important;
+        }
     }
     
 }
@@ -96,16 +104,20 @@ header {
     .dropdown-menu {
         --bs-dropdown-min-width: 10px;
         --bs-dropdown-bg: rgb(5, 44, 5);
-        --bs-dropdown-link-color: rgb(0,253,21)
+        --bs-dropdown-link-color: rgb(0,253,21);
+
 
     }
+
+    a.dropdown-item:hover {
+        color: $color-titulos;
+        background: $color-claro;
+    }
+
 
 }
 
 
-// nav div button{
-//     background-color:rgb(0, 253, 21) !important;
-// }
 
 
 .logo {
