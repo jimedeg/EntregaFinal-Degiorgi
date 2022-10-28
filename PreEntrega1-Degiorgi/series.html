@@ -27,7 +27,7 @@
 
 <body>
        <!--NavBar-->
-       <header>
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class=" container">
                 <div class="logo">
@@ -44,12 +44,16 @@
                         <li><a href="series.html">Series</a></li>
                         <li><a href="peliculas.html">Películas</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-success" href="iniciar_sesion.html">Iniciar Sesión</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Usuario
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="iniciar_sesion.html">Iniciar Sesión</a></li>
+                              <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-success" href="registro.html">Registro</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
