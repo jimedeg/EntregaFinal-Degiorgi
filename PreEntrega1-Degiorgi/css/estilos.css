@@ -66,8 +66,26 @@ header a:hover {
   color: #ebfad7;
 }
 
-nav div button {
-  background-color: #00fd15 !important;
+header .nav-item {
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: #00fd15 !important;
+}
+
+header .nav-link {
+  display: inline;
+}
+
+header .nav-link:hover {
+  color: #ebfad7;
+}
+
+header .dropdown-menu {
+  --bs-dropdown-min-width: 10px;
+  --bs-dropdown-bg: rgb(5, 44, 5);
+  --bs-dropdown-link-color: rgb(0,253,21)
+
+    ;
 }
 
 .logo {
@@ -88,10 +106,10 @@ nav div button {
 /* Botones */
 .btn-outline-success {
   font-family: 'Indie Flower', cursive !important;
-  --bs-btn-color: rgb(0, 253, 21) !important;
-  --bs-btn-border-color: rgb(0, 253, 21) !important;
-  --bs-btn-hover-color: rgb(235, 250, 215) !important;
-  --bs-btn-hover-bg: rgba(0, 253, 21, 0.5) !important;
+  --bs-btn-color: rgb(1, 105, 11) !important;
+  --bs-btn-border-color: rgb(0, 163, 14) !important;
+  --bs-btn-hover-color: rgb(18, 19, 17) !important;
+  --bs-btn-hover-bg: rgba(0, 253, 21, 0.808) !important;
   --bs-btn-hover-border-color: $color-primario !important;
   --bs-btn-active-color: $color-primario !important;
   --bs-btn-active-bg: $color-primario !important;
@@ -130,7 +148,7 @@ div#navbarNavDropdown {
 #banner h1 {
   color: #00ff15;
   text-shadow: 5px 5px 5px #0f0f0f;
-  font-size: xx-large;
+  font-size: 40px;
   padding: 5px 10px;
 }
 
@@ -174,10 +192,99 @@ h2, h3, h4, h5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: all 0.5s;
-  --bs-card-bg: rgb(235, 250, 215);
+  --bs-card-bg:rgb(235, 250, 215);
 }
 
 .card:hover {
+  box-shadow: 0 8px 16px 0 #01f70e;
+}
+
+.card-flip {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+
+.card-flip .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card-flip .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-flip .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-flip .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card-flip .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #ebfad7;
+  padding: 10px;
+  color: #00fd15;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-flip .back .link {
+  border-top: solid 1px #01690b;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card-flip .back .link a {
+  text-decoration: none;
+  color: #01690b;
+}
+
+.card-flip .back h3 {
+  color: #01690b;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card-flip .back p {
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  color: #01690b;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-flip:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 0 8px 16px 0 #01f70e;
+}
+
+.card-flip:hover .back {
+  transform: perspective(600px) rotateY(360deg);
   box-shadow: 0 8px 16px 0 #01f70e;
 }
 
