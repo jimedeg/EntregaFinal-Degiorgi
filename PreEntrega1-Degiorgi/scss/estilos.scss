@@ -72,13 +72,14 @@ header {
         padding-top: 10px;
         padding-left: 5px;
         padding-right: 5px;
+        text-align: center;
         transition: all 0.4s
     
     }
 
     a {
         text-decoration: none;
-        color: $color-primario
+        color: $color-primario;
     }
     
     a:hover {
@@ -95,6 +96,8 @@ header {
 
     .nav-link {
         display: inline;
+                color: $color-primario;
+
 
         &:hover {
             color: $color-claro;
@@ -112,6 +115,25 @@ header {
     a.dropdown-item:hover {
         color: $color-titulos;
         background: $color-claro;
+    }
+
+    .navbar-toggler {
+        color: $color-primario;
+        border-color: $color-primario;
+        background-color: rgb(0, 253, 21) !important;
+    }
+
+    .offcanvas-header{
+        background-color: rgb(19, 18, 18);
+
+        .btn-close {
+            background-color: rgb(0,253,21);
+        }
+    
+    }
+
+    .offcanvas-body{
+        background-color: rgb(19, 18, 18);
     }
 
 
@@ -141,7 +163,7 @@ header {
 
 .btn-outline-success {
     font-family: 'Indie Flower', cursive !important ;
-    --bs-btn-color: rgb(1, 105, 11) !important;
+    --bs-btn-color: rgb(8, 209, 28) !important;
     --bs-btn-border-color: rgb(0, 163, 14) !important;
     --bs-btn-hover-color: rgb(18, 19, 17) !important;
     --bs-btn-hover-bg: rgba(0, 253, 21, 0.808) !important;
@@ -157,7 +179,7 @@ header {
     cursor: pointer;
     border-radius: 5px;
     width: 150px;
-    font-size: large !important;
+    font-size: 20px !important;
       
 }
 

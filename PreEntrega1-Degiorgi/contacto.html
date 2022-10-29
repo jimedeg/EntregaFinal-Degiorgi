@@ -29,34 +29,45 @@
 
 <!--NavBar-->
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class=" container">
-            <div class="logo">
+    <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="logo">
                 <img src="imagenes/icono.jpg" width="50" alt="icono de clapperboard" title="icono de clapperboard">
                 <a class="text" href="index.html">Clapperboard</a>
-
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="series.html">Series</a></li>
-                    <li><a href="peliculas.html">Películas</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Usuario
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="iniciar_sesion.html">Iniciar Sesión</a></li>
-                          <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Clapperboard</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="series.html">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="peliculas.html">Películas</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="iniciar_sesion.html">Iniciar Sesión</a></li>
+                    <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
     </nav>
 </header>
